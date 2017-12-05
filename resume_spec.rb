@@ -9,13 +9,14 @@ describe 'Oliver Switzer' do
       expect(oliver.skills[:javascript]).to eq(7)
       expect(oliver.skills[:react]).to eq(7)
       expect(oliver.skills[:redux]).to eq(6)
+      expect(oliver.skills[:css]).to eq(5)
       expect(oliver.skills[:angular4]).to eq(7)
-      expect(oliver.skills[:html5_and_css]).to eq(7)
-      expect(oliver.skills[:sql]).to eq(6)
-      expect(oliver.skills[:ruby]).to eq(7)
+      expect(oliver.skills[:sql]).to eq(5)
+      expect(oliver.skills[:ruby]).to eq(6)
       expect(oliver.skills[:rails]).to eq(7)
       expect(oliver.skills[:aws]).to eq(5)
       expect(oliver.skills[:kotlin]).to eq(6)
+      expect(oliver.skills[:java]).to eq(7)
       expect(oliver.skills[:SOLID_principles]).to eq(7)
     end
   end
@@ -24,18 +25,12 @@ describe 'Oliver Switzer' do
     describe 'Pivotal (Aug 15, 2015 - Present)' do
       it 'describes his experience' do
         expect(oliver.past_jobs[:pivotal].description).to eq(%q(
-        - Help qualify what projects pivotal will take on by identifying integrations, 
-        risks, recommending frameworks, languages and services to use.
-        - Pair with interview candidates and give feedback on their performance.
-        - Develop and push products to production using a wide array of technologies, 
-        including React, Redux, AWS Elastic Beanstalk, AWS SQS, Ruby/Rails 5, Angular 4, Kotlin, Java, Postgres, Kafka
-        - Lead estimation meetings, weekly retrospectives, office-wide discussions about Pivotal’s LEAN and agile core practices
-        - Use CI/CD, TDD, pairing to deliver working software continuously
-        - Schedule one-on-ones with individual team members to discuss their personal goals, and 
-        to gauge their feelings about the project.
-        - “Anchor” (engineer lead) multiple projects, a role that involves making decisions around pairs for the day, 
-        helping groom and edit new feature stories from a technical perspective before the rest of the team sees them, 
-        help facilitate technical retrospectives and post-mortems.
+          - Apply extreme programming (XP) practices including pair programming and test-driven development 
+          across a variety of technology stacks and projects.
+          - Help identify what new client projects and employees Pivotal will take on. 
+          - Facilitate weekly retrospectives, iteration planning meetings and office-wide discussions about core XP/LEAN/Agile practices.
+          - Act as “Anchor” (engineering lead) on multiple projects, involving conveying core domain to rest of team, scheduling one-on-ones with 
+          individual team members and facilitating communication between development team and client stakeholders.
         ))
       end
     end
@@ -43,7 +38,7 @@ describe 'Oliver Switzer' do
     describe 'littleBits (Aug 2014 - Jun 2015)' do 
       it 'describes his experience' do 
         expect(oliver.past_jobs[:little_bits].description).to eq(%q(
-          - Primarily use Rails, MySQL, React, jQuery, SASS, ERB, Spree, Wordpress
+          - Primarily use Rails, MySQL, React, SASS, Spree, Wordpress
           - Build out RESTful mobile app API endpoints 
           - Built backend of Quirky-like voting app called bitLab that uses state machine and voting logic to track 
           state of “bit ideas” that are voted upon and curated
@@ -68,3 +63,5 @@ describe 'Oliver Switzer' do
     end
   end
 end
+
+
